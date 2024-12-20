@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4e8d9;
+}
+
+
+nav {
+    background-color: rgb(0,103,79,.9);
+    padding: 10px 100px;  
+    margin: 0px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+nav img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: large;
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+footer{
+    background-color: rgb(27, 27, 27);
+    text-decoration: none;
+    color: #8F857D; 
+    font-size: small;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    height: 13vh;
+}
+
+footer p{
+    margin-bottom: 0%;
+}
+
+footer *{
+    height: 3vh;
+    padding: auto;
+}
+
+footer>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 33%;
+}
+
+.links a{
+    color: #8F857D; 
+    font-size: small;
+    text-decoration: none;
+    padding-bottom: 3%;
+}
+
+.links a:hover{
+    color: #9BC53D; 
+}
+
+.reseaux a{
+    font-size: medium;
+    text-decoration: none;
+    color: #8F857D; 
+}
+
+.reseaux a:hover{
+    color: #dad5d1;
+}
+
+.btn_a{
+    background-color: #222;
+    border-radius: 6px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 20px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 9px 20px 8px;
+}
+
+.btn_a:hover {
+    background-color: #878383;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 3;
+}
+
+.submenu a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 96% ;
+}
+
+.submenu a:hover {
+    background-color: #666;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.user-display {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    footer{
+        background-color: rgb(27, 27, 27);
+        height: 25vh;
+    }
+    footer>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+  }

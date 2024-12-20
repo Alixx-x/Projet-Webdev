@@ -1,0 +1,184 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcf8f2;
+    color: #333;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+}
+
+/* Titre principal (inchangé) */
+.title {
+    background-image: url(../media/headbandeau-entreezoo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.5rem #333 solid;
+}
+
+.title h1 {
+    background-color: rgb(143, 133, 125, 0.95);
+    border: 0.5rem solid;
+    border-radius: 5px;
+    padding: 1%;
+    color: white;
+}
+
+.title p {
+    color: white;
+}
+
+/* Section billets */
+.billets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #f4e8d9;
+    padding: 2rem 0;
+}
+
+.billets img {
+    width: 15vw;
+    transition: transform 0.3s ease;
+}
+
+.billets img:hover {
+    transform: scale(1.1);
+}
+
+/* Cartes billets */
+.adult,
+.kid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #edddc7;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.adult:hover,
+.kid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.adult h2,
+.kid h2 {
+    position: absolute;
+    top: -1.5rem;
+    background-color: #f9efdf;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 8px;
+}
+
+/* Prix et sélection */
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.price p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #064635;
+}
+
+.price input {
+    width: 4rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Totaux */
+.total-adult,
+.total-kid {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Section achat */
+.achat {
+    display: flex;
+    flex-direction: column; /* Dispose les éléments en colonne */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center;
+    padding: 10px 20px; /* Espacement interne agréable */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.priceT {
+    font-weight: bold;
+    font-size: 1.5rem; /* Agrandit légèrement le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre "Total -" et le prix */
+    color: #333; /* Couleur neutre */
+}
+
+.priceT p:last-child {
+    margin-left: auto;
+}
+/* Boutons */
+
+.buy .btn_a {
+    font-size: 1.2rem; /* Agrandit le bouton */
+    padding: 10px 30px; /* Ajoute plus d'espace interne */
+    background-color: rgb(0, 103, 79);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px; /* Coins arrondis */
+    border: none; /* Supprime la bordure */
+    transition: all 0.3s ease; /* Animation lors du survol */
+}
+
+.buy .btn_a:hover {
+    background-color: #067b5f; /* Change légèrement la couleur au survol */
+    transform: translateY(-3px); /* Légère élévation au survol */
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .billets {
+        flex-direction: column;
+    }
+
+    .buy .btn_a {
+        width: 100%;
+        text-align: center;
+    }
+}
