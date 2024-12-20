@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleHeaderFooter.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleServices.css" type="text/css">
+    <title>Nos services</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="scriptAffHetF.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    <section>
+            <div>
+                <h1>Services Disponibles par Biome</h1>
+                <form id="biome-form">
+                    <label for="biome">Sélectionnez un biome :</label>
+                    <select name="id_biome" id="biome">
+                        <option value="1">Le Plateau</option>
+                        <option value="2">Le Belvédère</option>
+                        <option value="3">Les Clairières</option>
+                        <option value="4">Le Bois des pins</option>
+                        <option value="5">Le Vallon des cascades</option>
+                        <option value="6">La Bergerie des reptiles</option>
+                        <option value="7">Entrée</option>
+                    </select>
+            
+                </form>
+                <div id="services-container">
+                    <!-- Les services seront affichés ici -->
+                </div>
+            </div>
+    </section>
+    <script src="scriptService.js"></script>
+
+    <div id="footer"></div>
+
+    
+</body>
+</html>

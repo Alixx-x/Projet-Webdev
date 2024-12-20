@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleConnexion.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleHeaderFooter.css" type="text/css">
+    <title>Connexion et inscription</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="scriptAffHetF.js" defer></script>
+</head>
+<body>
+    
+    <div id="header"></div>
+    
+    <div class="container-fluid">
+        <div class="wrapper">
+            <section class="login" id="login-section">
+                <h1>Connexion</h1>
+                <form id="login-form" method="POST" action="./back/login.php" autocomplete="off">
+                    <div class="inputbox">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" id="email" name="email" required placeholder="">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" id="password" name="password" required placeholder="">
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fkymhxrhjqn761.jpg" target="_blank">Mot de passe oublié ?</a>
+                    </div>
+                    <button type="submit">Connexion</button>
+                    <div class="register-option">
+                        <span>Pas de compte ?</span>
+                        <a href="" id="switch-to-register"> Inscrivez-vous</a>
+                    </div>
+                </form>
+            </section>
+            <section class="register">
+                <h1>Inscription</h1>
+                    <form  method="POST" action="./back/inscription.php"  autocomplete="off">
+                    <div class="inputbox">
+                        <i class="bi bi-file-person-fill"></i>
+                        <input type="text" name="prenom" required placeholder="">
+                        <label for="prenom">Prénom</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bi bi-file-person-fill"></i>
+                        <input type="text" name="nom" required placeholder="">
+                        <label for="nom">Nom</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" required placeholder="">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" name="password" required placeholder="">
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    <button>Inscription</button>
+                    <div class="register-option">
+                        <span>Déjà un compte ?</span>
+                        <a href="" id="switch-to-login"> Connectez-vous</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="scriptConnexion.js"></script>
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

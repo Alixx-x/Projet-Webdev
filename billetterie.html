@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleHeaderFooter.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleBilletterie.css" type="text/css">
+    <title>Billetterie</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="scriptAffHetF.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="container-fluid">
+        <div class="title">
+            <h1>Billetterie</h1>
+            <p>Achetez vos billets ici !</p>
+        </div>
+        <form id="billetForm" action="./back/billet.php" method="POST">
+            <div class="billets">
+                <div class="adult">
+                    <h2>Billets adulte</h2>
+                    <img src="./media/lion-head-good.png" alt="Image adulte">
+                    <div class="price">
+                        <p>20€ -</p>
+                        <input type="number" id="tadult" name="tadult" min="0" max="10" value="0"/>
+                    </div>
+                    <p id="adultTotal" class="total-adult"></p>
+                </div>
+                <div class="kid">
+                    <h2>Billets enfant</h2>
+                    <img src="./media/cub-head-good.png" alt="Image enfant">
+                    <div class="price">
+                        <p>12€ -</p>
+                        <input type="number" id="tkid" name="tkid" min="0" max="10" value="0"/>
+                    </div>
+                    <p id="kidTotal" class="total-kid"></p>
+                </div>
+            </div>
+            <div class="achat">
+                <div class="priceT">
+                    <p>Total - </p>
+                    <p id="total" class="total-T">0€</p>
+                </div>
+                <div class="buy">
+                    <button id="payButton" class="btn_a" type="submit" style="display: none;">Payer</button>
+                    <a id="connectButton" class="btn_a" href="connexion.html" style="display: inline-block;">Connexion</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="scriptBilletterie.js"></script>
+</body>
+</html>

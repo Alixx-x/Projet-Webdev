@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carte - Chemin Réel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleHeaderFooter.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleMap.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="scriptAffHetF.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    <section>
+        <h1>Carte du parc</h1>
+        <label for="start">Lieu de départ :</label>
+        <select id="start"></select>
+        <label for="end">Lieu d'arrivé :</label>
+        <select id="end"></select>
+        <button onclick="tracerChemin()">Afficher le chemin</button>
+
+        <canvas id="mapCanvas" width="800" height="400"></canvas>
+    </section>
+
+    <script src="scriptMap.js"></script>
+
+    <div id="footer"></div>
+
+</body>
+</html>

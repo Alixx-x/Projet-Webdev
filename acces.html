@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleAcces.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleHeaderFooter.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="scriptAffHetF.js" defer></script>
+    <title>Accès au parc</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <article>
+        <section class="car">
+            <h4>En voiture</h4>
+            <p><b>Depuis Avignon</b><br>
+                En direction de Marseille, prendre l’A54 direction Arles/Barcelone, puis sortie n°15 « Salon Pélissanne » et suivre Pélissanne.
+                <br>
+                <b>Depuis Marseille</b><br>
+                En direction de Lyon, prendre la sortie n°15 « Salon centre » et suivre Pélissanne.
+                <br>
+                <b>Depuis Nîmes</b><br>
+                Prendre la sortie n°14 « Salon, Pélissanne » et suivre Pélissanne.
+                <br>
+                Un grand parking gratuit d’environ 500 places est disponible à l’entrée du parc.</p>
+        </section>
+        <section>
+            <h4>En transport en commun</h4>
+            <p>Le parc est desservi par bus depuis Salon de Provence. C’est un “transport à la demande” , accessible sur réservation ici ou par téléphone au 04 42 46 06 66 .</p>
+            <h4>Adresse</h4>
+            <p>Route du Château, 13330 La Barben, France</p>
+        </section>
+        <section id="map">
+            <script src="carte.js"></script>
+        </section>
+    </article>
+
+    <div id="footer"></div>
+
+    
+</body>
+</html>
